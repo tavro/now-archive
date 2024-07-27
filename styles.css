@@ -68,3 +68,16 @@ a {
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
+
+@media only screen and (max-width: 512px) {
+    main {
+        width: 95%;
+        margin: auto;
+        margin-top: 64px;
+    }
+
+    .container {
+        display: block;
+        gap: 8px;
+    }
+}
