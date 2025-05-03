@@ -35,7 +35,7 @@ a {
 
 .progress-bar {
     height: 30px;
-    width: 74.25%; /* (7425 / 10000) * 100 */
+    width: 76.42%; /* (7642 / 10000) * 100 */
     background-color: #579e40;
     text-align: center;
     line-height: 30px;
