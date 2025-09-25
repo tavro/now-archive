@@ -379,7 +379,7 @@ th {
   background-color: #111;
   border-radius: 0.75rem;
   color: #555;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   max-width: 300px;
 }
 
@@ -414,4 +414,63 @@ input[type="range"]::-moz-range-thumb {
   background: #20880c;
   border: none;
   cursor: pointer;
+}
+
+.gallery img {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-slide {
+  display: none;
+}
+
+.gallery-slide.active {
+  display: block;
+  animation: fade 0.6s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gallery-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  user-select: none;
+}
+.gallery-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
 }
